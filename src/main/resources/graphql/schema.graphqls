@@ -12,9 +12,9 @@ enum Coach {
 type FitnessClass {
     id: ID
     coach: Coach
-    startAt: LocalDateTime!
+    startsAt: LocalDateTime!
     endsAt: LocalDateTime!
-    Difficulty: Difficulty!
+    difficulty: Difficulty!
 }
 
 enum Difficulty {
