@@ -1,0 +1,23 @@
+scalar LocalDateTime
+
+type Query {
+    schedule(coach:Coach!):[FitnessClass!]!
+}
+
+enum Coach {
+    PHILIP
+    PETER
+}
+
+type FitnessClass {
+    id: ID
+    coach: Coach
+    startAt: LocalDateTime!
+    endsAt: LocalDateTime!
+    Difficulty: Difficulty!
+}
+
+enum Difficulty {
+    BEGINNER
+    ADVANCED
+}
